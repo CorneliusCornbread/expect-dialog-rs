@@ -16,7 +16,7 @@ impl<T, E: std::fmt::Debug> ExpectDialog<T> for Result<T, E> {
                     .set_type(MessageType::Error)
                     .set_title("Fatal Error")
                     .set_text(msg)
-                    .show_confirm()
+                    .show_alert()
                     .expect("Could not display dialog box");
                 panic!("{}", msg)
             }
@@ -33,7 +33,7 @@ impl<T> ExpectDialog<T> for Option<T> {
                     .set_type(MessageType::Error)
                     .set_title("Fatal Error")
                     .set_text(msg)
-                    .show_confirm()
+                    .show_alert()
                     .expect("Could not display dialog box");
                 panic!("{}", msg)
             }
