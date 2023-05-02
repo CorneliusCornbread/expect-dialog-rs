@@ -17,3 +17,5 @@ fn main() {
     f.expect_dialog("Value not present");
 }
 ```
+
+![image](https://user-images.githubusercontent.com/8294697/235587004-b86da48c-2253-4667-8497-6063c1a489ac.png)
