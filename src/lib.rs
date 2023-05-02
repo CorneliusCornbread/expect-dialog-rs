@@ -1,5 +1,8 @@
+///! It's just like `.expect()` except you get a dialog instead of only terminal output
+
 use native_dialog::{MessageDialog, MessageType};
 
+/// Expect dialog trait, implemented on Option and Result out of the box
 pub trait ExpectDialog<T> {
     fn expect_dialog(self, msg: &str) -> T;
 }
