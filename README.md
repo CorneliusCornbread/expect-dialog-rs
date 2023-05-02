@@ -12,7 +12,7 @@ cargo add expect-dialog
 ```rust
 use expect-dialog::ExpectDialog
 
-pub main() {
+fn main() {
     let f: Option<bool> = None;
     f.expect_dialog("Value not present");
 }
