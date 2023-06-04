@@ -10,8 +10,8 @@ impl<T, E: std::fmt::Debug> ExpectDialog<T> for Result<T, E> {
     fn expect_dialog(self, msg: &str) -> T {
         match self {
             Ok(value) => return value,
-            Err(_) => {
-                panic_dialog!("{}", msg);
+            Err(e) => {
+                panic_dialog!("{msg}: {e:?}");
             }
         }
     }
