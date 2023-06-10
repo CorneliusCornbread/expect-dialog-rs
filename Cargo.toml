@@ -9,7 +9,7 @@ license-file = "LICENSE"
 repository = "https://github.com/CorneliusCornbread/expect-dialog-rs"
 homepage = "https://github.com/CorneliusCornbread/expect-dialog-rs"
 readme = "README.md"
-keywords = ["utility", "error", "handling", "dialog", "UI", "GUI"]
+keywords = ["utility", "error", "handling", "dialog", "GUI"]
 categories = ["gui"]
 
 
