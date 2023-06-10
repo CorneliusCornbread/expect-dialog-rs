@@ -6,4 +6,4 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-native-dialog = { git = "https://github.com/CorneliusCornbread/native-dialog-rs" }
+native-dialog = "0.6.4"
