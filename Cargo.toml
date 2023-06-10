@@ -1,7 +1,17 @@
 [package]
 name = "expect-dialog"
-version = "0.1.0"
+version = "1.0.0"
 edition = "2021"
+authors = ["Jack <jrosenbeckerdev@gmail.com>"]
+description = " A simple utility for error handling that uses a dialog for it's notification as opposed to just stdout"
+license = "MIT"
+license-file = "LICENSE"
+repository = "https://github.com/CorneliusCornbread/expect-dialog-rs"
+homepage = "https://github.com/CorneliusCornbread/expect-dialog-rs"
+readme = "README.md"
+keywords = ["utility", "error", "handling", "dialog", "UI", "GUI"]
+categories = ["gui"]
+
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
