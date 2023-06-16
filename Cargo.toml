@@ -1,6 +1,6 @@
 [package]
 name = "expect-dialog"
-version = "1.0.0"
+version = "1.0.1"
 edition = "2021"
 authors = ["Jack <jrosenbeckerdev@gmail.com>"]
 description = " A simple utility for error handling that uses a dialog for it's notification as opposed to just stdout"
