@@ -3,6 +3,9 @@ A simple utility for error handling that uses a dialog for it's notification as 
 
 Great for graphical applications which need to crash but want to inform the user of the crash.
 
+## Note:
+For tests expect-dialog will revert to their non dialog counterparts and will function without creating dialogs.
+
 # Install
 ```
 cargo add expect-dialog

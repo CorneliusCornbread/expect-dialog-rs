@@ -1,5 +1,5 @@
 ///! It's just like `.expect()` except you get a dialog instead of only terminal output
-
+mod test;
 
 /// Expect dialog trait, implemented on Option and Result out of the box
 pub trait ExpectDialog<T> {
@@ -29,6 +29,7 @@ impl<T> ExpectDialog<T> for Option<T> {
 }
 
 #[macro_export]
+#[cfg(not(test))]
 macro_rules! panic_dialog {
     ($($arg:tt)*) => { 
         let msg = format!($($arg)*);
@@ -39,6 +40,14 @@ macro_rules! panic_dialog {
                     .set_text(&msg)
                     .show_alert()
                     .expect("Could not display dialog box");
+        core::panic!($($arg)*);
+    }
+}
+
+#[macro_export]
+#[cfg(test)]
+macro_rules! panic_dialog {
+    ($($arg:tt)*) => { 
         core::panic!($($arg)*);
     }
 }
